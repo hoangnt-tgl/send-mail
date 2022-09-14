@@ -1,5 +1,5 @@
 const nodemailer = require('nodemailer')
-require('dotenv').config();
+//require('dotenv').config();
 const EMAIL_ADDRESS_FROM = process.env.EMAIL_ADDRESS_FROM;
 const EMAIL_ADDRESS_TO = process.env.EMAIL_ADDRESS_TO;
 const EMAIL_PASSWORD = process.env.EMAIL_PASSWORD;
