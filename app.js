@@ -12,7 +12,8 @@ app.set('port', port);
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 var sendmail = require('./routes/send-mail');
-
-
+app.get('/', (req, res) => {
+    res.send('hello world')
+})
 app.use('/send-mail', sendmail);
 module.exports = app;
